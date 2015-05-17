@@ -1,0 +1,26 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/client.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>raspi-node.js</title>
+    <style type="text/css">
+    input.button {
+      width: 150px;
+      height: 50px;
+      font-size: 1.8em;
+    }
+    img.led {
+      width: 100px;
+      height: 100px;
+    }
+    </style>
+  </head>
+  <body>
+    <p><img id="led_img" class="led"></p>
+    <p>
+    <input type="button" value="on" onClick="led_on()" class="button"/>
+    <input type="button" value="off" onClick="led_off()" class="button"/>
+    </p>
+  </body>
+</html>
